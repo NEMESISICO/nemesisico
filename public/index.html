@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nemesis ICO</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.1/dist/ethers.umd.min.js"></script>
 </head>
+
 <body>
-    <h1>Nemesis ICO Placeholder</h1>
-    <script src="js/app.js"></script>
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('pt')">PT</button>
+    <button onclick="setLang('es')">ES</button>
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <img src="img/hero.jpg" class="hero-bg">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <img src="img/logo.png" class="hero-logo">
+        <h1 id="hero-title" class="hero-title">Where Stability Meets the Future</h1>
+        <p id="hero-subtitle" class="hero-subtitle">Official Presale of NemesisCoin (NEM)</p>
+
+        <div id="countdown" class="countdown"></div>
+
+        <button id="connectWallet" class="btn-primary">Connect Wallet</button>
+        <button id="buyButton" class="btn-secondary" disabled>Buy Tokens</button>
+    </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="section">
+    <h2 id="about-title" class="section-title">What is NemesisChain?</h2>
+    <p id="about-text" class="section-text">
+        NemesisChain is a next-generation Layer 1 blockchain designed to bring stability, intelligence, and 
+        protection to the world of digital assets. Powered by hybrid consensus, AI-guided economic systems, and 
+        a decentralized Central Bank, NemesisChain introduces the first resilient Web3 economy.
+    </p>
+</section>
+
+<!-- TOKENOMICS -->
+<section class="section">
+    <h2 id="tokenomics-title" class="section-title">Tokenomics</h2>
+    <img src="img/tokenomics.png" class="chart-img">
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+    <h2 id="how-title" class="section-title">How It Works</h2>
+    <img src="img/how.png" class="chart-img">
+</section>
+
+<!-- ROADMAP -->
+<section class="section">
+    <h2 id="roadmap-title" class="section-title">Roadmap</h2>
+    <img src="img/roadmap.png" class="chart-img">
+</section>
+
+<!-- TIERS -->
+<section class="section">
+    <h2 class="section-title">ICO Price Tiers</h2>
+    <img src="img/tiers.png" class="chart-img">
+</section>
+
+<footer>
+    NemesisChain © 2025 — All Rights Reserved
+</footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>
